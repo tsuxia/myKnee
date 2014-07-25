@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- global string for the whole application -->
+    <string name="app_name">myKnee</string>
+    <string name="title">myKnee</string>
+
+    <!-- first user welcome page string -->
+    <string name="welcome_question">How far does my knee bend?</string>
+    <string name="welcome_slogan">myKnee can measure that!</string>
+    <string name="welcome_button">Let\'s get started !</string>
+
+    <!-- tutorial page -->
+    <string name="title_tutorial_1">After surgery or injury you need to know how far your knee bends</string>
+    <string name="description_tutorial_1">myKnee the app designed by a physical therapist can measure that!</string>
+    
+    <!-- second user welcome page string -->
+    <string name="review_progress">View my progress</string>
+    <string name="measure_my_knee">Measure myKnee</string>
+
+    <!-- user profile page string -->
+    <string name="age">Age</string>
+    <string name="plus">+</string>
+    <string name="default_age">30</string>
+    <string name="minus">-</string>
+    <string name="sex">Sex</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="surgery_or_not">Did you have a surgery?</string>
+    <string name="surgery_yes">Yes</string>
+    <string name="surgery_not">No</string>
+    <string name="surgery_time_question">When did you have your ACL reconstruction surgery?</string>
+    <string name="default_surgery_time">1/1/2010</string>
+    <string name="surgery_knee_question">Which knee did you have surgery on?</string>
+    <string name="left">Left</string>
+    <string name="both">Both</string>
+    <string name="right">Right</string>
+    <string name="button_ready_to_measure">Ready to measure !</string>
+    <string name="textview_measure_start">Start at: </string>
+    <string name="textview_measure_end">End at: </string>
+    <string name="textview_measure_result">Range of Motion: </string>
+    <string name="button_measure_again">Measure Again</string>
+
+    <!-- interactive method page -->
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="output">Methods for feedback</string>
+    <string name="tts">Speech</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="input">Methods for control</string>
+    <string name="button">Button</string>
+    <string name="clock">Clock</string>
+    <string name="gesture">Gesture</string>
+    <string name="delete_profile">Delete My Profile</string>
+    <string name="delete_progress">Delete My Progress</string>
+
+    <!-- measure method page -->
+    <string name="measure_method_question">How do you want to \nmeasure your knee?</string>
+    <string name="leg">Leg: </string>
+    <string name="button_begin_measurement">Begin Measurement!</string>
+    
+    <!-- Strings for view benchmark -->
+    <string name="result_get_title">Range of Motion you get:</string>
+    <string name="result_should_title">Range of Mothion \nyou should achieve:</string>
+    <string name="question_mark">\?</string>
+
+    <!-- measurement page -->
+    <string name="button_start">Start</string>
+    <string name="interactive_method_question">Begin measure by using</string>
+    
+     <!-- question mark -->
+    <string name="title_question">** NOTE: The individual is provided with a 
+        comparison based on the age that you entered when you first filled 
+        out in the profile page. The range of motion is comapred to the normal 
+        values provided here. The references for the ROM are provided below.</string>
+	<string name="question_normal">Normal knee</string>
+	<string name="question_surgey">Surgey knee</string>
+    
+    <!-- menu list -->
+    <string name="tutorial">Tutorial</string>
+    <string name="user_profile">User Profile</string>
+    <string name="interactive_setting">Settings</string>
+    <string name="user_contact">Contact Us</string>
+    <string name="exit">Exit</string>
+
+    <!-- FWUpdate activity -->
+    <string name="title_oad">Firmware update (OAD)</string>
+    <string name="start_prog">Start programming</string>
+    <string name="cancel">Cancel</string>
+    <string name="prog_ogoing">NB! Not permitted to close this view during OAD transfer</string>
+    <string name="load_image_a">Image A</string>
+    <string name="load_image_b">Image B</string>
+    <string name="load_image_c">Custom</string>
+    <string name="no_image">Not an OAD image</string>
+    <string name="no_image_sel">No image selected</string>
+    <string name="new_image">New image:</string>
+    <string name="cur_image">Current image:</string>
+    <string name="idle">idle</string>
+    <string name="btn_txt_confirm">Confirm</string>
+</resources>

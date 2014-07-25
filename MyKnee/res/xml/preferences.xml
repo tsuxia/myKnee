@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res/com.ti.sensortag" >
+    
+    <PreferenceCategory android:title="Sensors online" >
+        
+        <!-- 
+	        Checkboxes have keys that match (with a simple transformation) the enum names in Sensor.java for easy
+	        decoding/encoding between java code and xml. 
+        -->
+        <CheckBoxPreference
+            android:key="pref_accelerometer_on"
+            android:summary="Turn the Accelerometer service on or off."
+            android:defaultValue="true"
+            android:persistent="true"
+            android:title="Accelerometer" />
+    </PreferenceCategory>
+    
+</PreferenceScreen>

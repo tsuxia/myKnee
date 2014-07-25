@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- global string for the whole application -->
+    <string name="app_name">MyKnee</string>
+    <string name="title">myKnee</string>
+
+    <!-- first user welcome page string -->
+    <string name="welcome_question">How far does my knee bend?</string>
+    <string name="welcome_slogan">MyKnee can measure that!</string>
+    <string name="welcome_button">Let\'s get started !</string>
+
+    <!-- second user welcome page string -->
+    <string name="review_progress">View my progress</string>
+    <string name="measure_my_knee">Measure MyKnee</string>
+
+    <!-- user profile page string -->
+    <string name="age">Age</string>
+    <string name="plus">+</string>
+    <string name="default_age">30</string>
+    <string name="minus">-</string>
+    <string name="sex">Sex</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="surgery_or_not">Did you have a surgery?</string>
+    <string name="surgery_yes">Yes</string>
+    <string name="surgery_not">No</string>
+    <string name="surgery_time_question">When did you have your ACL reconstruction surgery?</string>
+    <string name="default_surgery_time">1/1/2010</string>
+    <string name="surgery_knee_question">Which knee did you have surgery on?</string>
+    <string name="left">Left</string>
+    <string name="both">Both</string>
+    <string name="right">Right</string>
+    <string name="button_ready_to_measure">Ready to measure !</string>
+    <string name="textview_measure_start">Start at: </string>
+    <string name="textview_measure_end">End at: </string>
+    <string name="textview_measure_result">Range of Motion: </string>
+    <string name="button_measure_again">Measure Again</string>
+
+    <!-- interactive method page -->
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="output">Methods for feedback</string>
+    <string name="tts">Speech</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="input">Methods for control</string>
+    <string name="button">Button</string>
+    <string name="clock">Clock</string>
+    <string name="gesture">Gesture</string>
+    <string name="delete_profile">Delete My Profile</string>
+    <string name="delete_progress">Delete My Progress</string>
+
+    <!-- measure method page -->
+    <string name="measure_method_question">How do you want to \nmeasure your knee?</string>
+    <string name="button_begin_measurement">Begin Measurement!</string>
+
+    <!-- measurement page -->
+    <string name="button_start">Start</string>
+    <string name="interactive_method_question">Begin measure by using</string>
+
+    <!-- menu list -->
+    <string name="user_profile">User Profile</string>
+    <string name="interactive_setting">Settings</string>
+    <string name="exit">Exit</string>
+    
+    <!-- graph -->
+    <string name="graph_title">Compare your results with Benchmark</string>
+    <string name="temp1">Testk</string>
+    <string name="temp2">haha</string>
+    
+    <!-- BLE -->
+    <string name="button_scan">Scan</string>
+    <string name="title_device_list">Device List</string>
+    <string name="device">Device</string>
+    <string name="header">Available BLE Devices</string>
+    <string name="disconnected">Device is not connected</string>
+    <string name="control">Done</string>
+    <string name="bt_not_supported">Bluetooth is not supported</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="bt_on">Bluetooth was turned  on</string>
+    <string name="bt_not_on">Bluetooth was not turned on</string>
+    <string name="app_closing">Exiting BLE SensorTag app</string>
+    <string-array name="device_filter"><item>SensorTag</item></string-array>
+    <string name="nodevice">There are no SensorTags advertising within range. Please push the side button on the SensorTag to start advertising.</string>
+    <string name="scan_advice">The Android device is not scanning. Please tap \'Scan\' to scan for SensorTags.</string>
+    
+    <!-- Options menu -->
+    <string name="prefs">Preferences</string>
+    <string name="fwupdate">Firmware update</string>
+    <string name="bt">Bluetooth Adapter</string>
+    <string name="sthome">SensorTag Home</string>
+    <string name="tie2e">TI E2E Community</string>
+    <string name="about">About</string>
+
+    <!-- Device activity -->
+    <string name="dev_addr">Device address</string>
+    <string name="image">Image</string>
+    
+    <!-- Sensor names-->
+    <string name="keys">Keys</string>
+    <string name="acc">Accelerometer</string>
+    <string name="mag">Magnetometer</string>
+    <string name="gyro">Gyroscope</string>
+    <string name="hum">Humidity</string>
+    <string name="bar">Barometer</string>
+    <string name="tAmb">Ambience Temperature</string>
+    <string name="tObj">Object Temperature</string>
+    
+    <!-- Sensor misc. -->
+    <string name="xyz3">x:\ny:\nz:\n</string>
+    <string name="empty3">*\n*\n*\n</string>
+    <string name="unitDegSec3">deg/s\ndeg/s\ndeg/s\n</string>
+    <string name="unitG3">g\ng\ng\n</string>
+    <string name="unitT3">uT\nuT\nuT\n</string>
+    
+    <string name="empty1">*\n</string>
+    <string name="unitDeg">deg/C\n</string>
+    <string name="unitRH">%rH\n</string>
+    <string name="unitPA_Meter">nPA\nmeter</string>
+
+    <!-- FWUpdate activity -->
+    <string name="title_oad">Firmware update (OAD)</string>
+    <string name="start_prog">Start programming</string>
+    <string name="cancel">Cancel</string>
+    <string name="prog_ogoing">NB! Not permitted to close this view during OAD transfer</string>
+    <string name="load_image_a">Image A</string>
+    <string name="load_image_b">Image B</string>
+    <string name="load_image_c">Custom</string>
+    <string name="no_image">Not an OAD image</string>
+    <string name="no_image_sel">No image selected</string>
+    <string name="new_image">New image:</string>
+    <string name="cur_image">Current image:</string>
+    <string name="idle">idle</string>
+    <string name="btn_txt_confirm">Confirm</string>
+</resources>
+

@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item 
+        android:id="@+id/item_setting"
+        android:icon="@drawable/ic_setting"
+        android:showAsAction="always">
+        <menu >
+            <group>
+                <item 
+                    android:id="@+id/menu_tutorial"
+                    android:title="@string/tutorial"/>
+                <item 
+                    android:id="@+id/menu_user"
+                    android:title="@string/user_profile"/>
+                 <item 
+                    android:id="@+id/menu_setting"
+                    android:title="@string/interactive_setting"/>
+                 <item 
+                    android:id="@+id/menu_contact"
+                    android:title="@string/user_contact"/>
+                <item 
+                    android:id="@+id/menu_exit"
+                    android:title="@string/exit"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>
