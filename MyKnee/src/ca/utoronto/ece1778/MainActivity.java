@@ -29,7 +29,7 @@ import ca.utoronto.ece1778.fragments.ViewBenchmarkFragment;
 import ca.utoronto.ece1778.fragments.ViewProgressFragment;
 import ca.utoronto.ece1778.interfaces.FragmentHandler;
 
-import com.google.analytics.tracking.android.EasyTracker;
+//import com.google.analytics.tracking.android.EasyTracker;
 
 public class MainActivity extends Activity implements FragmentHandler, OnInitListener
 {
@@ -118,7 +118,7 @@ public class MainActivity extends Activity implements FragmentHandler, OnInitLis
 	protected void onStart()
 	{
 		super.onRestart();
-		EasyTracker.getInstance(this).activityStart(this);
+//	EasyTracker.getInstance(this).activityStart(this);
 		SharedPreferences preferences = this.getSharedPreferences(MainActivity.appName, Context.MODE_PRIVATE);
 		isTTSOn     = preferences.getBoolean(MainActivity.isTTS, isTTSOn);
 		isVibrateOn = preferences.getBoolean(MainActivity.isVibrate, isVibrateOn);
@@ -297,7 +297,7 @@ public class MainActivity extends Activity implements FragmentHandler, OnInitLis
 	{
 		// TODO Auto-generated method stub
 		super.onStop();
-		EasyTracker.getInstance(this).activityStop(this);
+	//	EasyTracker.getInstance(this).activityStop(this);
 	}
 
 }
