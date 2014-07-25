@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title" />
+
+        <Button
+            android:id="@+id/button_delete_profile"
+            style="@style/button_guide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#ff0000"
+            android:text="@string/delete_profile" />
+
+        <Button
+            android:id="@+id/button_delete_progress"
+            style="@style/button_guide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#ff6932"
+            android:text="@string/delete_progress" />
+
+        <TextView
+            style="@style/information_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/output" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/hint_big"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tts" />
+
+            <Button
+                android:id="@+id/button_tts_on"
+                style="@style/button_setted"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/on" />
+
+            <Button
+                android:id="@+id/button_tts_off"
+                style="@style/button_unset"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="@string/off" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/hint_big"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/vibrate" />
+
+            <Button
+                android:id="@+id/button_vibrate_on"
+                style="@style/button_setted"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/on" />
+
+            <Button
+                android:id="@+id/button_vibrate_off"
+                style="@style/button_unset"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="@string/off" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/information_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/input" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/hint_big"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button" />
+
+            <Button
+                android:id="@+id/button_button_on"
+                style="@style/button_setted"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/on" />
+
+            <Button
+                android:id="@+id/button_button_off"
+                style="@style/button_unset"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="@string/off" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/hint_big"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gesture" />
+
+            <Button
+                android:id="@+id/button_gesture_on"
+                style="@style/button_setted"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/on" />
+
+            <Button
+                android:id="@+id/button_gesture_off"
+                style="@style/button_unset"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="@string/off" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/hint_big"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/clock" />
+
+            <Button
+                android:id="@+id/button_clock_on"
+                style="@style/button_setted"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/on" />
+
+            <Button
+                android:id="@+id/button_clock_off"
+                style="@style/button_unset"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="@string/off" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_interactive_done"
+            style="@style/button_guide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/button_ready_to_measure" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -101,6 +101,11 @@ public class TutorialFragment extends Fragment
 					imageview_tutorial.setImageResource(R.drawable.tutorial_5);
 					textview_turotial_description.setText(R.string.description_tutorial_5);
 				}else if (flag_tutorial_page == 6){
+
+					textview_turotial_title.setText(R.string.title_tutorial_6);
+					imageview_tutorial.setImageResource(R.drawable.tutorial_6);
+					textview_turotial_description.setText(R.string.description_tutorial_6);
+				}else if (flag_tutorial_page == 7){
 					
 					SharedPreferences preferences = getActivity().getSharedPreferences(MainActivity.appName, Context.MODE_PRIVATE);
 					long preferencesCreated = preferences.getLong(MainActivity.preferencesCreated, 0);

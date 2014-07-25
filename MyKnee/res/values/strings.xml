@@ -13,14 +13,16 @@
     <!-- tutorial page -->
     <string name="title_tutorial_1">After surgery or injury \nyou need to know \nhow far your knee bends?</string>
     <string name="description_tutorial_1">myKnee is an app designed by a physical therapist can measure that!</string>
-    <string name="title_tutorial_2">Attach the phone to your ankle in either way:</string>
-    <string name="description_tutorial_2"></string>
-    <string name="title_tutorial_3">Start bending like this</string>
-    <string name="description_tutorial_3">while lying on your stomach.</string>
-    <string name="title_tutorial_4">Measure your bending</string>
-    <string name="description_tutorial_4">And compare to the benchmark for your age or surgery.</string>
-    <string name="title_tutorial_5">View your progress over time</string>
-    <string name="description_tutorial_5">Let\'s start to measure!</string>
+    <string name="title_tutorial_2">Attach the phone to your ankle in this way:</string>
+    <string name="description_tutorial_2">Option 1</string>
+    <string name="title_tutorial_3">Or attach the phone to your ankle in this way:</string>
+    <string name="description_tutorial_3">Option 2</string>
+    <string name="title_tutorial_4">Start bending like this</string>
+    <string name="description_tutorial_4">while lying on your stomach.</string>
+    <string name="title_tutorial_5">Measure your bending</string>
+    <string name="description_tutorial_5">And compare to the benchmark for your age or surgery.</string>
+    <string name="title_tutorial_6">View your progress over time</string>
+    <string name="description_tutorial_6">Let\'s start to measure!</string>
     
     <!-- second user welcome page string -->
     <string name="review_progress">View my progress</string>
