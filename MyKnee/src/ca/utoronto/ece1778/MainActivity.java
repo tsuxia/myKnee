@@ -63,7 +63,7 @@ public class MainActivity extends FragmentActivity implements FragmentHandler, O
 	boolean isClockOn   = false;
 	
 	int from_measurement_onback = 0;
-	FragmentTransaction ft = null;
+	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
@@ -72,8 +72,7 @@ public class MainActivity extends FragmentActivity implements FragmentHandler, O
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		FragmentManager fm = getFragmentManager();
-		ft = getSupportFragmentManager().beginTransaction();
+		FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
 
 		Bundle bundle = this.getIntent().getExtras();
 		if(bundle != null)
@@ -229,6 +228,8 @@ public class MainActivity extends FragmentActivity implements FragmentHandler, O
 	public void buttonClicked(int messageType) 
 	{
 		
+		FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+		
 		switch (messageType) {
 		
 		case R.layout.fragment_welcome_first_user:
@@ -278,7 +279,6 @@ public class MainActivity extends FragmentActivity implements FragmentHandler, O
 		default:
 			break;
 		}
-		ft.addToBackStack(null);
 		ft.commit();
 	}
 	
