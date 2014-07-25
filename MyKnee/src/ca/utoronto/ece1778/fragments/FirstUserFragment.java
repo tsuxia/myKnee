@@ -1,12 +1,10 @@
 package ca.utoronto.ece1778.fragments;
 
-import java.util.Date;
-
 import android.app.Activity;
-import android.app.Fragment;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +12,6 @@ import android.widget.Button;
 import ca.utoronto.ece1778.MainActivity;
 import ca.utoronto.ece1778.R;
 import ca.utoronto.ece1778.interfaces.FragmentHandler;
-import ca.utoronto.ece1778.services.TempValue;
 
 public class FirstUserFragment extends Fragment
 {

@@ -4,7 +4,6 @@ import java.util.Locale;
 
 import android.app.Activity;
 import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
@@ -14,6 +13,8 @@ import android.os.Bundle;
 import android.os.Vibrator;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.TextToSpeech.OnInitListener;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -31,7 +32,7 @@ import ca.utoronto.ece1778.interfaces.FragmentHandler;
 
 //import com.google.analytics.tracking.android.EasyTracker;
 
-public class MainActivity extends Activity implements FragmentHandler, OnInitListener
+public class MainActivity extends FragmentActivity implements FragmentHandler, OnInitListener
 {
 	
 	public static final String appName = "myKnee";
@@ -62,6 +63,7 @@ public class MainActivity extends Activity implements FragmentHandler, OnInitLis
 	boolean isClockOn   = false;
 	
 	int from_measurement_onback = 0;
+	FragmentTransaction ft = null;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
@@ -71,6 +73,7 @@ public class MainActivity extends Activity implements FragmentHandler, OnInitLis
 		setContentView(R.layout.activity_main);
 
 		FragmentManager fm = getFragmentManager();
+		ft = getSupportFragmentManager().beginTransaction();
 
 		Bundle bundle = this.getIntent().getExtras();
 		if(bundle != null)
@@ -83,7 +86,7 @@ public class MainActivity extends Activity implements FragmentHandler, OnInitLis
 		
 		if (from_measurement_onback == 1){
 			ViewBenchmarkFragment viewbenchmarkfragment = new ViewBenchmarkFragment();
-			fm.beginTransaction().add(R.id.frame_layout_main, viewbenchmarkfragment).commit();
+			ft.add(R.id.frame_layout_main, viewbenchmarkfragment).commit();
 			//Todo
 			Intent checkTTSIntent = new Intent();
 		    checkTTSIntent.setAction(TextToSpeech.Engine.ACTION_CHECK_TTS_DATA);
@@ -96,12 +99,12 @@ public class MainActivity extends Activity implements FragmentHandler, OnInitLis
 				if(preferencesCreated == 0)
 				{
 					FirstUserFragment firstUserFragment = new FirstUserFragment();
-					fm.beginTransaction().add(R.id.frame_layout_main, firstUserFragment).commit();
+					ft.add(R.id.frame_layout_main, firstUserFragment).commit();
 				}
 				else
 				{
 					SecondUserFragment secondUserFragment = new SecondUserFragment();
-					fm.beginTransaction().add(R.id.frame_layout_main, secondUserFragment).commit();
+					ft.add(R.id.frame_layout_main, secondUserFragment).commit();
 				}
 				
 		        Intent checkTTSIntent = new Intent();
@@ -225,59 +228,58 @@ public class MainActivity extends Activity implements FragmentHandler, OnInitLis
 	@Override
 	public void buttonClicked(int messageType) 
 	{
-		FragmentManager fm = getFragmentManager();
-		FragmentTransaction t = fm.beginTransaction();
+		
 		switch (messageType) {
 		
 		case R.layout.fragment_welcome_first_user:
 			FirstUserFragment firstUserFragment = new FirstUserFragment();
-			t.replace(R.id.frame_layout_main, firstUserFragment);
+			ft.replace(R.id.frame_layout_main, firstUserFragment);
 			break;
 			
 		case R.layout.fragment_welcome_second_user:
 			SecondUserFragment secondUserFragment = new SecondUserFragment();
-			t.replace(R.id.frame_layout_main, secondUserFragment);
+			ft.replace(R.id.frame_layout_main, secondUserFragment);
 			break;
 			
 		case R.layout.fragment_tutorial:
 			TutorialFragment turialFrament = new TutorialFragment();
-			t.replace(R.id.frame_layout_main, turialFrament);
+			ft.replace(R.id.frame_layout_main, turialFrament);
 			break;
 			
 		case R.layout.fragment_user_profile:
 			UserProfileFragment userProfileFrament = new UserProfileFragment();
-			t.replace(R.id.frame_layout_main, userProfileFrament);
+			ft.replace(R.id.frame_layout_main, userProfileFrament);
 			break;
 			
 		case R.layout.fragment_interactive_method:
 			InteractiveMethodFragment InteractiveMethodFragment = new InteractiveMethodFragment();
-			t.replace(R.id.frame_layout_main, InteractiveMethodFragment);
+			ft.replace(R.id.frame_layout_main, InteractiveMethodFragment);
 			break;
 		
 		case R.layout.fragment_measure_method:
 			MeasureMethodFragment measureMethodFragment = new MeasureMethodFragment();
-			t.replace(R.id.frame_layout_main, measureMethodFragment);
+			ft.replace(R.id.frame_layout_main, measureMethodFragment);
 			break;
 			
 		case R.layout.fragment_measurement:
 			MeasurementFragment measurementFragment = new MeasurementFragment();
-			t.replace(R.id.frame_layout_main, measurementFragment);
+			ft.replace(R.id.frame_layout_main, measurementFragment);
 			break;
 			
 		case R.layout.fragment_view_benchmark:
 			ViewBenchmarkFragment viewBenchmarkFragment = new ViewBenchmarkFragment();
-			t.replace(R.id.frame_layout_main, viewBenchmarkFragment);
+			ft.replace(R.id.frame_layout_main, viewBenchmarkFragment);
 			break;
 			
 		case R.layout.fragment_view_my_progress:
 			ViewProgressFragment viewprogressFragment = new ViewProgressFragment();
-			t.replace(R.id.frame_layout_main, viewprogressFragment);
+			ft.replace(R.id.frame_layout_main, viewprogressFragment);
 			
 		default:
 			break;
 		}
-		t.addToBackStack(null);
-		t.commit();
+		ft.addToBackStack(null);
+		ft.commit();
 	}
 	
 	public static void speak(String sentence)
