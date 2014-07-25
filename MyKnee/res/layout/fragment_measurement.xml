@@ -9,28 +9,27 @@
 
    <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="match_parent"
         android:layout_weight="8"
-        android:orientation="vertical" >
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10" >
 
         <TextView
             style="@style/title"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/title" />
 
         <TextView
-            style="@style/information_small"
+            style="@style/information_middle"
             android:id="@+id/textview_start"
             android:layout_weight="2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/textview_measure_start"
-             />
+            android:text="@string/textview_measure_start"/>
         
          <TextView
-            style="@style/information_small"
+            style="@style/information_middle"
             android:id="@+id/textview_end"
             android:layout_weight="2"
             android:layout_width="match_parent"
@@ -47,27 +46,16 @@
             android:text="@string/textview_measure_result"
             android:textSize="23sp"
              />
-        
-         <TextView
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-             />
+
          
         <Button
             android:id="@+id/button_start_measurement"
             style="@style/button_guide"
-            android:layout_weight="1"
             android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/button_start" />
-        
-         <TextView
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-             />
+
     </LinearLayout>
 
 </LinearLayout>
