@@ -11,8 +11,16 @@
     <string name="welcome_button">Let\'s get started !</string>
 
     <!-- tutorial page -->
-    <string name="title_tutorial_1">After surgery or injury you need to know how far your knee bends</string>
-    <string name="description_tutorial_1">myKnee the app designed by a physical therapist can measure that!</string>
+    <string name="title_tutorial_1">After surgery or injury \nyou need to know \nhow far your knee bends?</string>
+    <string name="description_tutorial_1">myKnee is an app designed by a physical therapist can measure that!</string>
+    <string name="title_tutorial_2">Attach the phone to your ankle in either way:</string>
+    <string name="description_tutorial_2"></string>
+    <string name="title_tutorial_3">Start bending like this</string>
+    <string name="description_tutorial_3">while lying on your stomach.</string>
+    <string name="title_tutorial_4">Measure your bending</string>
+    <string name="description_tutorial_4">And compare to the benchmark for your age or surgery.</string>
+    <string name="title_tutorial_5">View your progress over time</string>
+    <string name="description_tutorial_5">Let\'s start to measure!</string>
     
     <!-- second user welcome page string -->
     <string name="review_progress">View my progress</string>
@@ -78,23 +86,10 @@
     
     <!-- menu list -->
     <string name="tutorial">Tutorial</string>
-    <string name="user_profile">User Profile</string>
+    <string name="profile">Profile</string>
+    <string name="progress">Progress</string>
     <string name="interactive_setting">Settings</string>
     <string name="user_contact">Contact Us</string>
     <string name="exit">Exit</string>
 
-    <!-- FWUpdate activity -->
-    <string name="title_oad">Firmware update (OAD)</string>
-    <string name="start_prog">Start programming</string>
-    <string name="cancel">Cancel</string>
-    <string name="prog_ogoing">NB! Not permitted to close this view during OAD transfer</string>
-    <string name="load_image_a">Image A</string>
-    <string name="load_image_b">Image B</string>
-    <string name="load_image_c">Custom</string>
-    <string name="no_image">Not an OAD image</string>
-    <string name="no_image_sel">No image selected</string>
-    <string name="new_image">New image:</string>
-    <string name="cur_image">Current image:</string>
-    <string name="idle">idle</string>
-    <string name="btn_txt_confirm">Confirm</string>
 </resources>

@@ -51,19 +51,7 @@ public class SecondUserFragment extends Fragment {
 			}
 		});
 		
-		Button reviewButton = (Button)getView().findViewById(R.id.button_welcome_second_review);
-		reviewButton.setOnClickListener(new View.OnClickListener() 
-		{
-			
-			@Override
-			public void onClick(View arg0) 
-			{
-			
-				//fufh.buttonClicked(R.id.button_welcome_second_review);
-				fufh.buttonClicked(R.layout.fragment_view_my_progress);
-				
-			}
-		});
+
 	}
 
 }

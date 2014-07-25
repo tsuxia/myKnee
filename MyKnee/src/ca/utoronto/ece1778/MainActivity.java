@@ -194,10 +194,14 @@ public class MainActivity extends Activity implements FragmentHandler, OnInitLis
     		buttonClicked(R.layout.fragment_tutorial);
     		break;
     	
-    	case R.id.menu_user:
+    	case R.id.menu_profile:
     		buttonClicked(R.layout.fragment_user_profile);
 			break;
 			
+    	case R.id.menu_progress:
+    		buttonClicked(R.layout.fragment_view_my_progress);
+    		break;
+    		
 		case R.id.menu_setting:
 			buttonClicked(R.layout.fragment_interactive_method);
 			break;

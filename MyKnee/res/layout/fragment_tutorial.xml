@@ -18,29 +18,22 @@
 	            android:id="@+id/textview_turotial_title"
 	            android:layout_width="match_parent"
 	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dp"
+	            android:layout_marginBottom="10dp"
 	            android:text="@string/title_tutorial_1" />
-	    
-	     <TextView
-	            style="@style/information_big"
-	            android:layout_width="match_parent"
-	            android:layout_height="wrap_content"/>
 	    
 	    <ImageView 
 	       	 	android:id="@+id/imageview_tutorial"
 	        	android:layout_width="match_parent"
-	        	android:layout_height="wrap_content"
+	        	android:layout_height="300dp"
 	        	android:src="@drawable/tutorial_1"/>
-	    
-	    <TextView
-	            style="@style/information_big"
-	            android:layout_width="match_parent"
-	            android:layout_height="wrap_content"/>
 	    
 	     <TextView
 	            style="@style/information_small"
 	            android:id="@+id/textview_turotial_description"
 	            android:layout_width="match_parent"
 	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
 	            android:text="@string/description_tutorial_1" />
      
  	</LinearLayout>   

@@ -10,8 +10,11 @@
                     android:id="@+id/menu_tutorial"
                     android:title="@string/tutorial"/>
                 <item 
-                    android:id="@+id/menu_user"
-                    android:title="@string/user_profile"/>
+                    android:id="@+id/menu_profile"
+                    android:title="@string/profile"/>
+                <item 
+                    android:id="@+id/menu_progress"
+                    android:title="@string/progress"/> 
                  <item 
                     android:id="@+id/menu_setting"
                     android:title="@string/interactive_setting"/>

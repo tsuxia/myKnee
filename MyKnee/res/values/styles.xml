@@ -21,6 +21,12 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="information_middle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#50C0E9</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
     <style name="information_small">
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">#50C0E9</item>

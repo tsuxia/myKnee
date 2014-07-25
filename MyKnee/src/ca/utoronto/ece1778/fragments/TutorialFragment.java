@@ -53,77 +53,55 @@ public class TutorialFragment extends Fragment
 		tutorialLayout.setOnTouchListener(new OnGestureListener(this.getActivity()){
 			
 			@Override
-			public void oneFingerLeft2Right()
-			{
-				// TODO Auto-generated method stub
-				super.oneFingerLeft2Right();
+			public void oneFingerLeft2Right(){
 				
-				if (flag_tutorial_page == 1){
-								
-				}else if (flag_tutorial_page == 2){
-					
-					textview_turotial_title.setText("After surgery or injury you need to know how far your knee bends");
-					imageview_tutorial.setImageResource(R.drawable.tutorial_1);
-					textview_turotial_description.setText("myKnee the app designed by a physical therapist can measure that!");
-					flag_tutorial_page = 1;
-					
-				}else if (flag_tutorial_page == 3){
-					
-					textview_turotial_title.setText("Attach to your ankle");
-					imageview_tutorial.setImageResource(R.drawable.tutorial_2);
-					textview_turotial_description.setText("");
-					flag_tutorial_page = 2;
-					
-				}else if (flag_tutorial_page == 4){
-					
-					textview_turotial_title.setText("Start bending¡­");
-					imageview_tutorial.setImageResource(R.drawable.tutorial_3);
-					textview_turotial_description.setText("while lying on your stomach");
-					flag_tutorial_page = 3;
-					
-				}else if (flag_tutorial_page == 5){
-					
-					textview_turotial_title.setText("Measure your bending");
-					imageview_tutorial.setImageResource(R.drawable.tutorial_4);
-					textview_turotial_description.setText("And compare to the benchmark for your age or surgery");
-					flag_tutorial_page = 4;
-				}
+				if(flag_tutorial_page > 1)
+					flag_tutorial_page -= 1;
+				
+				changeInformation(flag_tutorial_page);
 			}
-
-			@Override
-			public void oneFingerRight2Left()
-			{
-				// TODO Auto-generated method stub
-				super.oneFingerRight2Left();
+			
+			public void oneFingerRight2Left(){
+				
+					flag_tutorial_page += 1;
+				
+				changeInformation(flag_tutorial_page);
+				
+			}
+			
+			private void changeInformation(int flag_tutorial_page){
 				
 				if (flag_tutorial_page == 1){
-					textview_turotial_title.setText("Attach to your ankle");
-					imageview_tutorial.setImageResource(R.drawable.tutorial_2);
-					textview_turotial_description.setText("");
-					flag_tutorial_page = 2;
+					
+					textview_turotial_title.setText(R.string.title_tutorial_1);
+					imageview_tutorial.setImageResource(R.drawable.tutorial_1);
+					textview_turotial_description.setText(R.string.description_tutorial_1);
 					
 				}else if (flag_tutorial_page == 2){
 					
-					textview_turotial_title.setText("Start bending¡­");
-					imageview_tutorial.setImageResource(R.drawable.tutorial_3);
-					textview_turotial_description.setText("while lying on your stomach");
-					flag_tutorial_page = 3;
+					textview_turotial_title.setText(R.string.title_tutorial_2);
+					imageview_tutorial.setImageResource(R.drawable.tutorial_2);
+					textview_turotial_description.setText(R.string.description_tutorial_2);
 					
 				}else if (flag_tutorial_page == 3){
 					
-					textview_turotial_title.setText("Measure your bending");
-					imageview_tutorial.setImageResource(R.drawable.tutorial_4);
-					textview_turotial_description.setText("And compare to the benchmark for your age or surgery");
-					flag_tutorial_page = 4;
+					textview_turotial_title.setText(R.string.title_tutorial_3);
+					imageview_tutorial.setImageResource(R.drawable.tutorial_3);
+					textview_turotial_description.setText(R.string.description_tutorial_3);
 					
 				}else if (flag_tutorial_page == 4){
 					
-					textview_turotial_title.setText("View your progress over time");
-					imageview_tutorial.setImageResource(R.drawable.tutorial_5);
-					textview_turotial_description.setText("Let's start to measure!!");
-					flag_tutorial_page = 5;
+					textview_turotial_title.setText(R.string.title_tutorial_4);
+					imageview_tutorial.setImageResource(R.drawable.tutorial_4);
+					textview_turotial_description.setText(R.string.description_tutorial_4);
 					
 				}else if (flag_tutorial_page == 5){
+					
+					textview_turotial_title.setText(R.string.title_tutorial_5);
+					imageview_tutorial.setImageResource(R.drawable.tutorial_5);
+					textview_turotial_description.setText(R.string.description_tutorial_5);
+				}else if (flag_tutorial_page == 6){
+					
 					SharedPreferences preferences = getActivity().getSharedPreferences(MainActivity.appName, Context.MODE_PRIVATE);
 					long preferencesCreated = preferences.getLong(MainActivity.preferencesCreated, 0);
 					if (preferencesCreated == 0){
@@ -137,7 +115,9 @@ public class TutorialFragment extends Fragment
 					}
 				}
 				
+				
 			}
+
 			
 		});
 	}

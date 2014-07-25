@@ -14,13 +14,14 @@
 
         <TextView
             android:id="@+id/textview_total_measurement"
-            style="@style/information_small"
+            style="@style/information_middle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="500dp">
+            android:layout_height="400dp">
 
             <ListView
                 android:id="@+id/listview_total_measurement"
@@ -34,6 +35,7 @@
             style="@style/button_guide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
             android:text="@string/button_measure_again" />
         
     </LinearLayout>

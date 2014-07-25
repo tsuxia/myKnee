@@ -322,7 +322,7 @@ public abstract class OnGestureListener implements View.OnTouchListener {
 	
 	public void oneFingerSingleClick(){}
 	
-	public void oneFingerDoubleClick(){System.out.println("This is a double click");}
+	public void oneFingerDoubleClick(){}
 	
 	public void oneFingerLongPress(){}
 	
