@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:contentDescription="@string/title"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo1" />
 
         <TextView
             style="@style/information_small"
