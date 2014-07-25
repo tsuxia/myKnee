@@ -22,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/information_small"
+            android:layout_marginBottom="10dp"
             android:text="@string/welcome_question" />
 
         <ImageView 
@@ -34,6 +35,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/information_small"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:text="@string/welcome_slogan" />
 
         <Button
