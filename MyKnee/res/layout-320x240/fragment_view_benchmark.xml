@@ -14,15 +14,17 @@
 
         <TextView
             style="@style/title"
+            android:textSize="25sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/title" />
 
         <TextView
             style="@style/information_big"
+            android:textSize="18sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="25dp"
             android:text="@string/result_get_title" />
 
         <TextView
@@ -33,9 +35,10 @@
 
         <TextView
             style="@style/information_big"
+            android:textSize="18sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:text="@string/result_should_title" />
 
         <TextView
@@ -51,8 +54,8 @@
         <Button
             android:id="@+id/button_question_mark"
             style="@style/button_question_mark"
-            android:layout_width="45sp"
-            android:layout_height="45sp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
             android:layout_gravity="center_horizontal" 
             android:text="@string/question_mark" />
 
@@ -61,7 +64,7 @@
             style="@style/button_guide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="35dp"
             android:text="@string/review_progress" />
     </LinearLayout>
 
