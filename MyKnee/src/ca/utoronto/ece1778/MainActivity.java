@@ -284,7 +284,8 @@ public class MainActivity extends FragmentActivity implements FragmentHandler, O
 	
 	public static void speak(String sentence)
 	{
-		tts.speak(sentence, TextToSpeech.QUEUE_FLUSH, null);
+		if (tts != null)
+			tts.speak(sentence, TextToSpeech.QUEUE_FLUSH, null);
 	}
 	
 	public static void vibrate(long seconds)

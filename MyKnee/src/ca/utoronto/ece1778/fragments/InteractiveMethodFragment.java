@@ -6,11 +6,13 @@ import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 import ca.utoronto.ece1778.MainActivity;
 import ca.utoronto.ece1778.R;
 import ca.utoronto.ece1778.interfaces.FragmentHandler;
@@ -77,9 +79,13 @@ public class InteractiveMethodFragment extends Fragment
 			public void onClick(View v)
 			{
 
-				isTTS = true;
-				ttsOn.setBackgroundColor(UserProfileFragment.COLOR_SETTED);
-				ttsOff.setBackgroundColor(UserProfileFragment.COLOR_UNSET);
+				if(TextToSpeech.Engine.CHECK_VOICE_DATA_PASS == 1){
+					isTTS = true;
+					ttsOn.setBackgroundColor(UserProfileFragment.COLOR_SETTED);
+					ttsOff.setBackgroundColor(UserProfileFragment.COLOR_UNSET);
+				}else
+					Toast.makeText(getActivity(), "Voice data missing", Toast.LENGTH_SHORT).show();
+				
 			}
 		});
 
