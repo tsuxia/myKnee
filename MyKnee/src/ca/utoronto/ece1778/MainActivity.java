@@ -2,8 +2,6 @@ package ca.utoronto.ece1778;
 
 import java.util.Locale;
 
-import android.app.Activity;
-import android.app.FragmentManager;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
@@ -30,7 +28,7 @@ import ca.utoronto.ece1778.fragments.ViewBenchmarkFragment;
 import ca.utoronto.ece1778.fragments.ViewProgressFragment;
 import ca.utoronto.ece1778.interfaces.FragmentHandler;
 
-//import com.google.analytics.tracking.android.EasyTracker;
+import com.google.analytics.tracking.android.EasyTracker;
 
 public class MainActivity extends FragmentActivity implements FragmentHandler, OnInitListener
 {
@@ -120,7 +118,7 @@ public class MainActivity extends FragmentActivity implements FragmentHandler, O
 	protected void onStart()
 	{
 		super.onRestart();
-//	EasyTracker.getInstance(this).activityStart(this);
+		EasyTracker.getInstance(this).activityStart(this);
 		SharedPreferences preferences = this.getSharedPreferences(MainActivity.appName, Context.MODE_PRIVATE);
 		isTTSOn     = preferences.getBoolean(MainActivity.isTTS, isTTSOn);
 		isVibrateOn = preferences.getBoolean(MainActivity.isVibrate, isVibrateOn);
@@ -304,7 +302,7 @@ public class MainActivity extends FragmentActivity implements FragmentHandler, O
 	{
 		// TODO Auto-generated method stub
 		super.onStop();
-	//	EasyTracker.getInstance(this).activityStop(this);
+		EasyTracker.getInstance(this).activityStop(this);
 	}
 
 }

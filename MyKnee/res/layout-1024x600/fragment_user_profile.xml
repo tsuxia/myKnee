@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/hint_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:text="@string/age" />
+
+            <Button
+                android:id="@+id/button_increase_age"
+                style="@style/button_unset"
+                android:layout_width="45dp"    
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/plus" />
+
+            <TextView
+                android:id="@+id/text_view_age"
+                style="@style/data_small"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:text="@string/default_age" />
+
+            <Button
+                android:id="@+id/button_decrease_age"
+                style="@style/button_unset"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:text="@string/minus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/hint_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sex" />
+
+            <Button
+                android:id="@+id/button_male"
+                style="@style/button_setted"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/male" />
+
+            <Button
+                android:id="@+id/button_female"
+                style="@style/button_unset"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="@string/female" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/information_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/surgery_or_not" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_is_surgery"
+                style="@style/button_setted"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:text="@string/surgery_yes" />
+
+            <Button
+                android:id="@+id/button_no_surgery"
+                style="@style/button_unset"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:text="@string/surgery_not" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_surgery_time_question"
+            style="@style/information_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/surgery_time_question" />
+
+        <TextView
+            android:id="@+id/text_view_surgery_time"
+            style="@style/data_big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/default_surgery_time" />
+
+        <TextView
+            android:id="@+id/text_view_surgery_knee_question"
+            style="@style/information_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/surgery_knee_question" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout_knees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_surgery_left"
+                style="@style/button_setted"
+                android:layout_width="73dp"
+                android:layout_height="35dp"
+                android:text="@string/left" />
+
+            <Button
+                android:id="@+id/button_surgery_both"
+                style="@style/button_unset"
+                android:layout_width="73dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="2dp"
+                android:text="@string/both" />
+
+            <Button
+                android:id="@+id/button_surgery_right"
+                style="@style/button_unset"
+                android:layout_width="73dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="2dp"
+                android:text="@string/right" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_profile_done"
+            style="@style/button_guide"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_ready_to_measure" />
+    </LinearLayout>
+
+</LinearLayout>
