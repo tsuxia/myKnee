@@ -89,13 +89,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="@string/surgery_or_not" />
+            android:text="@string/surgery_or_not" 
+            android:visibility="invisible" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal" >
+            android:orientation="horizontal" 
+            android:visibility="invisible" >
 
             <Button
                 android:id="@+id/button_is_surgery"
@@ -118,14 +120,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="@string/surgery_time_question" />
+            android:text="@string/surgery_time_question" 
+            android:visibility="invisible" />
 
         <TextView
             android:id="@+id/text_view_surgery_time"
             style="@style/data_big"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/default_surgery_time" />
+            android:text="@string/default_surgery_time" 
+            android:visibility="invisible" />
 
         <TextView
             android:id="@+id/text_view_surgery_knee_question"
@@ -133,14 +137,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="@string/surgery_knee_question" />
+            android:text="@string/surgery_knee_question"
+            android:visibility="invisible"  />
 
         <LinearLayout
             android:id="@+id/linear_layout_knees"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal" >
+            android:orientation="horizontal" 
+            android:visibility="invisible" >
 
             <Button
                 android:id="@+id/button_surgery_left"
