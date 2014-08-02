@@ -55,10 +55,10 @@ public class MainActivity extends FragmentActivity implements FragmentHandler, O
 	public static Vibrator vibrator = null;
 	
 	boolean isTTSOn     = true;
-	boolean isVibrateOn = false;
-	boolean isButtonOn  = true;
+	boolean isVibrateOn = true;
+	boolean isButtonOn  = false;
 	boolean isGestureOn = false;
-	boolean isClockOn   = false;
+	boolean isClockOn   = true;
 	
 	int from_measurement_onback = 0;
 	

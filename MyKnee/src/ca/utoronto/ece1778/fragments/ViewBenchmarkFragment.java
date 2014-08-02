@@ -50,7 +50,7 @@ public class ViewBenchmarkFragment extends Fragment
 		super.onStart();
 		
 		TextView resultGet = (TextView)this.getView().findViewById(R.id.text_view_result_get);
-		resultGet.setText(TempValue.result+"");
+		resultGet.setText(TempValue.result+"бу");
 		
 		TextView resultShould = (TextView)this.getView().findViewById(R.id.text_view_result_should);
 		
@@ -71,14 +71,14 @@ public class ViewBenchmarkFragment extends Fragment
 			int days = (int) (currentDate.getTime() - sugeryDate.getTime())/(1000 * 60 * 60 * 24); 
 			int weeks = days / 7;
 			double benchmark = new BenchmarkService().getACLBenchmark(weeks);
-			resultShould.setText(benchmark+"");
+			resultShould.setText(benchmark+"бу");
 		} else
 		{
 			int age = preference.getInt(MainActivity.age, 0);
 			Pair benchmark = new BenchmarkService().getNormalBenchmark(age);
 			int min = (int) (benchmark.mean - benchmark.std);
 			int max = (int) (benchmark.mean + benchmark.std);
-			resultShould.setText(min + "~" + max);
+			resultShould.setText(min + "бу" + "~" + max + "бу");
 		}
 		
 		Button questionmarkButton = (Button)this.getView().findViewById(R.id.button_question_mark);

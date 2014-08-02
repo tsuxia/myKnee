@@ -30,11 +30,11 @@ public class InteractiveMethodFragment extends Fragment
 	Button ttsOn = null;
 	Button ttsOff = null;
 
-	boolean isVibrate = false;
+	boolean isVibrate = true;
 	Button vibrateOn = null;
 	Button vibrateOff = null;
 
-	boolean isButton = true;
+	boolean isButton = false;
 	Button buttonOn = null;
 	Button buttonOff = null;
 
@@ -42,7 +42,7 @@ public class InteractiveMethodFragment extends Fragment
 	Button gestureOn = null;
 	Button gestureOff = null;
 
-	boolean isClock = false;
+	boolean isClock = true;
 	Button clockOn = null;
 	Button clockOff = null;
 

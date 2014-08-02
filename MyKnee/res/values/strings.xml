@@ -25,8 +25,8 @@
     <string name="description_tutorial_6"></string>
     
     <!-- second user welcome page string -->
-    <string name="review_progress">View my progress</string>
-    <string name="measure_my_knee">Measure myKnee</string>
+    <string name="review_progress">Progress</string>
+    <string name="measure_my_knee">Measure my knee</string>
 
     <!-- user profile page string -->
     <string name="age">Age</string>
@@ -50,7 +50,7 @@
     <string name="textview_measure_start">Start at: </string>
     <string name="textview_measure_end">End at: </string>
     <string name="textview_measure_result">Range of Motion: </string>
-    <string name="button_measure_again">Measure Again</string>
+    <string name="button_measure_again">Measure again</string>
 
     <!-- interactive method page -->
     <string name="on">On</string>
@@ -68,7 +68,7 @@
     <!-- measure method page -->
     <string name="measure_method_question">How do you want to \nmeasure your knee?</string>
     <string name="leg">Leg: </string>
-    <string name="button_begin_measurement">Begin Measurement!</string>
+    <string name="button_begin_measurement">Begin measurement</string>
     
     <!-- Strings for view benchmark -->
     <string name="result_get_title">Range of Motion you get:</string>

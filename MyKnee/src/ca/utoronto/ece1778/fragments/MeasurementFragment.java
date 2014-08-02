@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import ca.utoronto.ece1778.MainActivity;
 import ca.utoronto.ece1778.R;
 import ca.utoronto.ece1778.interfaces.FragmentHandler;
@@ -34,12 +35,13 @@ public class MeasurementFragment extends Fragment {
 	TextView text_view_result = null;
 	TextView text_view_end = null;
 	Button button = null;
-	private static final int SHAKE_THRESHOLD = 1000;
+	private static final int SHAKE_THRESHOLD = 400;
 	private final int accurary = 1000;
 	private final float FILTERING_VALAUE = 0.1f;
 	private int final_flag = 0;
 	private int staticMark = 0;
-	private int staticMarkThreshold = 30;
+	//wait for 5 seconds
+	private int staticMarkThreshold = 50;
 	private long lastUpdate;
 	private float last_lowX = 0f;
 	private float last_lowY = 0f;
@@ -72,10 +74,10 @@ public class MeasurementFragment extends Fragment {
 	int timeint = 0;
 	
 	boolean isTTS = true;
-	boolean isVibrate = false;
-	boolean isButton  = true;
+	boolean isVibrate = true;
+	boolean isButton  = false;
 	boolean isGesture = false;
-	boolean isClock   = false;
+	boolean isClock   = true;
 
 	@Override
 	public void onAttach(Activity activity) {
@@ -97,7 +99,7 @@ public class MeasurementFragment extends Fragment {
 	public void onStart() {
 		
 		super.onStart();
-
+        	
 		text_view_start  = (TextView) getActivity().findViewById(R.id.textview_start);
 		text_view_end    = (TextView) getActivity().findViewById(R.id.textview_end);
 		text_view_result = (TextView) getActivity().findViewById(R.id.textview_result);
@@ -114,8 +116,25 @@ public class MeasurementFragment extends Fragment {
 		isGesture = preferences.getBoolean(MainActivity.isGesture, isGesture);
 		isClock   = preferences.getBoolean(MainActivity.isClock, isClock);
 		
-		if(isTTS)
-			MainActivity.speak("Attach the phone to your leg parallel and then start the measurement.");
+		
+		
+		if(isTTS){
+			if (isClock)
+				MainActivity.speak("Attach the phone to your ankle get into the start position and wait for instructions.");
+	        else if (isButton)
+	        	MainActivity.speak("Attach the phone to your ankle get into the start position and press the start button.");
+	        else
+	        	MainActivity.speak("Attach the phone to your ankle get into the start position and double click the screen to start.");
+			
+		}else{
+			if (isClock)
+	        	Toast.makeText(getActivity(), "Attach the phone to your ankle get into the start position and wait for instructions.", Toast.LENGTH_LONG).show();
+	        else if (isButton)
+	        	Toast.makeText(getActivity(), "Attach the phone to your ankle get into the start position and press the start button.", Toast.LENGTH_LONG).show();
+	        else
+	        	Toast.makeText(getActivity(), "Attach the phone to your ankle get into the start position and double click the screen to start.", Toast.LENGTH_LONG).show();
+		}
+			
 		if(isVibrate)
 			MainActivity.vibrate(200);
 		
@@ -142,7 +161,6 @@ public class MeasurementFragment extends Fragment {
 				}
 			});
 		}
-
 			
 	}
 
@@ -152,8 +170,22 @@ public class MeasurementFragment extends Fragment {
 
 			final_flag = 1;
 
-			if(isTTS)
-				MainActivity.speak("Measurement started.");
+			if(isTTS){
+				if (isClock)
+					MainActivity.speak("Measurement started. Bend as much as you can and hold for 3 seconds.");
+		        else if (isButton)
+		        	MainActivity.speak("Measurement started. Bend as much as you can and press stop button.");
+		        else
+		        	MainActivity.speak("Measurement started. Bend as much as you can and double click to stop measurement.");
+				
+			}else{
+				if (isClock)
+		        	Toast.makeText(getActivity(), "Bend as much as you can and hold for 3 seconds.", Toast.LENGTH_LONG).show();
+		        else if (isButton)
+		        	Toast.makeText(getActivity(), "Bend as much as you can and press stop button.", Toast.LENGTH_LONG).show();
+		        else
+		        	Toast.makeText(getActivity(), "Bend as much as you can and double click to stop measurement.", Toast.LENGTH_LONG).show();
+			}
 			
 			if(isVibrate)
 				MainActivity.vibrate(new long[]{300, 200, 300}, false);
@@ -168,16 +200,22 @@ public class MeasurementFragment extends Fragment {
 			TempValue.result = final_angle;
 			
 			if(isTTS)
-				MainActivity.speak("Measurement stopped");
+				MainActivity.speak("Measurement complete.");
 			
 			if(isVibrate)
 				MainActivity.vibrate(new long[]{200, 100, 200, 100, 200},  false);
 			
 			if(isButton)
-				button.setText("Compare with benchmark");
+				button.setText("Benchmark");
 
 		} else if (final_flag == -1) {
-
+			
+			final_flag = 2;
+			if(isClock && isTTS && !isButton && !isGesture)
+				MainActivity.speak("Started at "+y_angle_start+" degree; Ended at "+y_angle_final + " degree; Range of Motion is " + final_angle + "degree.");
+			if (isClock && !isTTS && !isButton && !isGesture)
+				Toast.makeText(getActivity(), "Started at "+y_angle_start+"бу; Ended at "+y_angle_final + "бу; Range of Motion is " + final_angle + "бу.", Toast.LENGTH_LONG).show();
+			
 			year = dateAndTime.get(Calendar.YEAR);
 			month = dateAndTime.get(Calendar.MONTH) + 1;
 			day = dateAndTime.get(Calendar.DAY_OF_MONTH);
@@ -280,7 +318,7 @@ public class MeasurementFragment extends Fragment {
 						staticMark += 1;
 						if(staticMark >= staticMarkThreshold)
 						{
-							MeasurementFragment.this.nextStep();
+							MeasurementFragment.this.nextStep();						
 							staticMark = 0;
 						}
 					}
@@ -317,8 +355,22 @@ public class MeasurementFragment extends Fragment {
 					}
 
 					text_view_end.setText("End at: " + y_angle_final + "бу");
-					text_view_result.setText("Range of Motion: " + final_angle);
+					text_view_result.setText("Range of Motion: " + final_angle + "бу");
 
+				}
+				
+
+				if (final_flag == -1) {
+				
+					if(isClock && shakeSpeed < SHAKE_THRESHOLD)
+					{
+						staticMark += 1;
+						if(staticMark >= staticMarkThreshold)
+						{
+							MeasurementFragment.this.nextStep();
+							staticMark = 0;
+						}
+					}
 				}
 
 			}
