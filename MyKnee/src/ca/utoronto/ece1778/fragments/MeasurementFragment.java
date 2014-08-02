@@ -362,7 +362,7 @@ public class MeasurementFragment extends Fragment {
 
 				if (final_flag == -1) {
 				
-					if(isClock && shakeSpeed < SHAKE_THRESHOLD)
+					if(isClock && !isButton && !isGesture && shakeSpeed < SHAKE_THRESHOLD)
 					{
 						staticMark += 1;
 						if(staticMark >= staticMarkThreshold)
