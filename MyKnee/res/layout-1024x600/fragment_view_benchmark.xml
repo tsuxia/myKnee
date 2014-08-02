@@ -13,12 +13,6 @@
         android:orientation="vertical" >
 
         <TextView
-            style="@style/title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/title" />
-
-        <TextView
             style="@style/information_big"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

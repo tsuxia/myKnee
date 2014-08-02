@@ -17,8 +17,7 @@
         <TextView
             style="@style/title"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/title" />
+            android:layout_height="wrap_content"/>
 
         <TextView
             style="@style/information_middle"

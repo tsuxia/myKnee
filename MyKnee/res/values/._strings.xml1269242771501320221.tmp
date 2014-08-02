@@ -31,7 +31,7 @@
     <string name="left">Left</string>
     <string name="both">Both</string>
     <string name="right">Right</string>
-    <string name="button_ready_to_measure">Ready to measure !</string>
+    <string name="button_ready_to_measure">Let's get started!</string>
     <string name="textview_measure_start">Start at: </string>
     <string name="textview_measure_end">End at: </string>
     <string name="textview_measure_result">Range of Motion: </string>

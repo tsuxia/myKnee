@@ -148,19 +148,19 @@ public class UserProfileFragment extends Fragment {
 		{
 			buttonIsSurgery.setBackgroundColor(UserProfileFragment.COLOR_SETTED);
 			buttonNoSurgery.setBackgroundColor(UserProfileFragment.COLOR_UNSET);
-			textViewTimeQuestion.setVisibility(View.VISIBLE);
+	/*		textViewTimeQuestion.setVisibility(View.VISIBLE);
 			textViewTimeAnswer.setVisibility(View.VISIBLE);
 			textViewKneeQuestion.setVisibility(View.VISIBLE);
-			linearLayoutKnees.setVisibility(View.VISIBLE);
+			linearLayoutKnees.setVisibility(View.VISIBLE);*/
 		}
 		else
 		{
 			buttonNoSurgery.setBackgroundColor(UserProfileFragment.COLOR_SETTED);
 			buttonIsSurgery.setBackgroundColor(UserProfileFragment.COLOR_UNSET);
-			textViewTimeQuestion.setVisibility(View.INVISIBLE);
+		/*	textViewTimeQuestion.setVisibility(View.INVISIBLE);
 			textViewTimeAnswer.setVisibility(View.INVISIBLE);
 			textViewKneeQuestion.setVisibility(View.INVISIBLE);
-			linearLayoutKnees.setVisibility(View.INVISIBLE);
+			linearLayoutKnees.setVisibility(View.INVISIBLE);*/
 		}
 		
 		buttonIsSurgery.setOnClickListener(new View.OnClickListener() {
@@ -171,10 +171,10 @@ public class UserProfileFragment extends Fragment {
 				isSurgeried = true;
 				buttonIsSurgery.setBackgroundColor(UserProfileFragment.COLOR_SETTED);
 				buttonNoSurgery.setBackgroundColor(UserProfileFragment.COLOR_UNSET);
-				textViewTimeQuestion.setVisibility(View.VISIBLE);
+			/*	textViewTimeQuestion.setVisibility(View.VISIBLE);
 				textViewTimeAnswer.setVisibility(View.VISIBLE);
 				textViewKneeQuestion.setVisibility(View.VISIBLE);
-				linearLayoutKnees.setVisibility(View.VISIBLE);
+				linearLayoutKnees.setVisibility(View.VISIBLE);*/
 			}
 		});
 		
@@ -186,10 +186,10 @@ public class UserProfileFragment extends Fragment {
 				isSurgeried = false;
 				buttonNoSurgery.setBackgroundColor(UserProfileFragment.COLOR_SETTED);
 				buttonIsSurgery.setBackgroundColor(UserProfileFragment.COLOR_UNSET);
-				textViewTimeQuestion.setVisibility(View.INVISIBLE);
+			/*	textViewTimeQuestion.setVisibility(View.INVISIBLE);
 				textViewTimeAnswer.setVisibility(View.INVISIBLE);
 				textViewKneeQuestion.setVisibility(View.INVISIBLE);
-				linearLayoutKnees.setVisibility(View.INVISIBLE);
+				linearLayoutKnees.setVisibility(View.INVISIBLE);*/
 			}
 		});
 		

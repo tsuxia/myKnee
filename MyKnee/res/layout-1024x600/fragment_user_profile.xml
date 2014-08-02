@@ -16,7 +16,7 @@
             style="@style/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/title" />
+            android:text="@string/profile" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -96,22 +96,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal" 
-            android:visibility="invisible" >
+            android:orientation="horizontal" >
 
             <Button
                 android:id="@+id/button_is_surgery"
                 style="@style/button_setted"
                 android:layout_width="100dp"
                 android:layout_height="35dp"
-                android:text="@string/surgery_yes" />
+                android:text="@string/surgery_yes" 
+                android:visibility="invisible" />
 
             <Button
                 android:id="@+id/button_no_surgery"
                 style="@style/button_unset"
                 android:layout_width="100dp"
                 android:layout_height="35dp"
-                android:text="@string/surgery_not" />
+                android:text="@string/surgery_not" 
+                android:visibility="invisible" />
         </LinearLayout>
 
         <TextView

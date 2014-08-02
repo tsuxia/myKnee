@@ -17,7 +17,7 @@
             android:textSize="25sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/title" />
+            android:text="@string/interactive_setting" />
 
         <Button
             android:id="@+id/button_delete_profile"
@@ -217,7 +217,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="@string/button_ready_to_measure" />
+            android:text="@string/button_ready_to_measure_setting" />
     </LinearLayout>
 
 </LinearLayout>

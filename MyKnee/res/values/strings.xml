@@ -11,18 +11,18 @@
     <string name="welcome_button">Let\'s get started !</string>
 
     <!-- tutorial page -->
-    <string name="title_tutorial_1">After surgery or injury \nyou need to know \nhow far your knee bends?</string>
-    <string name="description_tutorial_1">myKnee is an app designed by a physical therapist can measure that!</string>
-    <string name="title_tutorial_2">Attach the phone to your ankle in this way:</string>
+    <string name="title_tutorial_1">How much does my knee bend?</string>
+    <string name="description_tutorial_1">myKnee, designed by a physical therapist, can measure that!</string>
+    <string name="title_tutorial_2">Attach to your ankle like this...</string>
     <string name="description_tutorial_2">Option 1</string>
-    <string name="title_tutorial_3">Or attach the phone to your ankle in this way:</string>
+    <string name="title_tutorial_3">...or like this.</string>
     <string name="description_tutorial_3">Option 2</string>
-    <string name="title_tutorial_4">Start bending like this</string>
-    <string name="description_tutorial_4">while lying on your stomach.</string>
-    <string name="title_tutorial_5">Measure your bending</string>
-    <string name="description_tutorial_5">And compare to the benchmark for your age or surgery.</string>
-    <string name="title_tutorial_6">View your progress over time</string>
-    <string name="description_tutorial_6">Let\'s start to measure!</string>
+    <string name="title_tutorial_4">Lying on your stomach, bend your knee.</string>
+    <string name="description_tutorial_4"></string>
+    <string name="title_tutorial_5">Measure and Compare</string>
+    <string name="description_tutorial_5"></string>
+    <string name="title_tutorial_6">View your progress</string>
+    <string name="description_tutorial_6"></string>
     
     <!-- second user welcome page string -->
     <string name="review_progress">View my progress</string>
@@ -45,7 +45,8 @@
     <string name="left">Left</string>
     <string name="both">Both</string>
     <string name="right">Right</string>
-    <string name="button_ready_to_measure">Ready to measure !</string>
+    <string name="button_ready_to_measure">Let\'s get started!</string>
+    <string name="button_ready_to_measure_setting">Ready to measure !</string>
     <string name="textview_measure_start">Start at: </string>
     <string name="textview_measure_end">End at: </string>
     <string name="textview_measure_result">Range of Motion: </string>
