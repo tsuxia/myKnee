@@ -306,7 +306,7 @@ public class MeasurementFragment extends Fragment {
 					y_angle_start = (int) (Math.asin(y_total) * 180 / Math.PI);
 					z_angle_start = (int) (Math.acos(z_total) * 180 / Math.PI);
 
-					text_view_start.setText("Start at: " + y_angle_start + "бу");
+					text_view_start.setText("Start position: " + y_angle_start + "бу");
 
 				}
 
@@ -354,8 +354,8 @@ public class MeasurementFragment extends Fragment {
 						final_angle = Math.abs(y_angle_final - y_angle_start);
 					}
 
-					text_view_end.setText("End at: " + y_angle_final + "бу");
-					text_view_result.setText("Range of Motion: " + final_angle + "бу");
+					text_view_end.setText("End position: " + y_angle_final + "бу");
+					text_view_result.setText("Range of motion: " + final_angle + "бу");
 
 				}
 				

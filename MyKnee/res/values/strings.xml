@@ -7,7 +7,7 @@
 
     <!-- first user welcome page string -->
     <string name="welcome_question">How far does my knee bend?</string>
-    <string name="welcome_slogan">myKnee can measure that!</string>
+    <string name="welcome_slogan">myKnee, designed by a physical therapist, can measure that!</string>
     <string name="welcome_button">Let\'s get started !</string>
 
     <!-- tutorial page -->
@@ -19,7 +19,7 @@
     <string name="description_tutorial_3">Option 2</string>
     <string name="title_tutorial_4">Lying on your stomach, bend your knee.</string>
     <string name="description_tutorial_4"></string>
-    <string name="title_tutorial_5">Measure and Compare</string>
+    <string name="title_tutorial_5">Measure and compare</string>
     <string name="description_tutorial_5"></string>
     <string name="title_tutorial_6">View your progress</string>
     <string name="description_tutorial_6"></string>
@@ -47,9 +47,9 @@
     <string name="right">Right</string>
     <string name="button_ready_to_measure">Let\'s get started!</string>
     <string name="button_ready_to_measure_setting">Ready to measure !</string>
-    <string name="textview_measure_start">Start at: </string>
-    <string name="textview_measure_end">End at: </string>
-    <string name="textview_measure_result">Range of Motion: </string>
+    <string name="textview_measure_start">Start position: </string>
+    <string name="textview_measure_end">End position: </string>
+    <string name="textview_measure_result">Range of motion: </string>
     <string name="button_measure_again">Measure again</string>
 
     <!-- interactive method page -->
@@ -67,12 +67,12 @@
 
     <!-- measure method page -->
     <string name="measure_method_question">How do you want to \nmeasure your knee?</string>
-    <string name="leg">Leg: </string>
+    <string name="leg">Knee: </string>
     <string name="button_begin_measurement">Begin measurement</string>
     
     <!-- Strings for view benchmark -->
-    <string name="result_get_title">Range of Motion you get:</string>
-    <string name="result_should_title">Range of Mothion \nyou should achieve:</string>
+    <string name="result_get_title">Range of motion you get:</string>
+    <string name="result_should_title">Range of motion \nyou should achieve:</string>
     <string name="question_mark">\?</string>
 
     <!-- measurement page -->
