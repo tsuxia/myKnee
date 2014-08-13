@@ -95,8 +95,9 @@ public class MainActivity extends FragmentActivity implements FragmentHandler, O
 		
 				if(preferencesCreated == 0)
 				{
-					FirstUserFragment firstUserFragment = new FirstUserFragment();
-					ft.add(R.id.frame_layout_main, firstUserFragment).commit();
+					//FirstUserFragment firstUserFragment = new FirstUserFragment();
+					TutorialFragment tutorialFragment = new TutorialFragment();
+					ft.add(R.id.frame_layout_main, tutorialFragment).commit();
 				}
 				else
 				{

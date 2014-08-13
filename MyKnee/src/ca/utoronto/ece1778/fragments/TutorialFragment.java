@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import ca.utoronto.ece1778.MainActivity;
 import ca.utoronto.ece1778.R;
 import ca.utoronto.ece1778.interfaces.FragmentHandler;
@@ -46,6 +47,10 @@ public class TutorialFragment extends Fragment
 	{
 		// TODO Auto-generated method stub
 		super.onStart();
+		
+		Toast.makeText(getActivity(), "Swipe from right to left (<----) to show the next page;" +
+				"\nSwipe from left to right (---->) to show the previous page.", Toast.LENGTH_LONG).show();
+		
 		textview_turotial_title = (TextView)this.getActivity().findViewById(R.id.textview_turotial_title);
 		imageview_tutorial = (ImageView)this.getActivity().findViewById(R.id.imageview_tutorial);
 		textview_turotial_description = (TextView)this.getActivity().findViewById(R.id.textview_turotial_description);
@@ -61,12 +66,19 @@ public class TutorialFragment extends Fragment
 				changeInformation(flag_tutorial_page);
 			}
 			
+			@Override
 			public void oneFingerRight2Left(){
 				
 					flag_tutorial_page += 1;
 				
 				changeInformation(flag_tutorial_page);
 				
+			}
+			
+			@Override
+			public void oneFingerSingleClick(){
+				Toast.makeText(getActivity(), "Swipe from right to left (<----) to show the next page;" +
+						"\nSwipe from left to right (---->) to show the previous page.", Toast.LENGTH_LONG).show();
 			}
 			
 			private void changeInformation(int flag_tutorial_page){
