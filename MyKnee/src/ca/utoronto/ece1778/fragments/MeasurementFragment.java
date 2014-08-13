@@ -211,9 +211,9 @@ public class MeasurementFragment extends Fragment {
 		} else if (final_flag == -1) {
 			
 			final_flag = 2;
-			if(isClock && isTTS && !isButton && !isGesture)
+			if(isClock && isTTS)
 				MainActivity.speak("Started at "+y_angle_start+" degrees; Ended at "+y_angle_final + " degrees; Range of Motion is " + final_angle + "degrees.");
-			if (isClock && !isTTS && !isButton && !isGesture)
+			if (isClock && !isTTS)
 				Toast.makeText(getActivity(), "Started at "+y_angle_start+"бу; Ended at "+y_angle_final + "бу; Range of Motion is " + final_angle + "бу.", Toast.LENGTH_LONG).show();
 			
 			year = dateAndTime.get(Calendar.YEAR);
@@ -362,7 +362,7 @@ public class MeasurementFragment extends Fragment {
 
 				if (final_flag == -1) {
 				
-					if(isClock && !isButton && !isGesture && shakeSpeed < SHAKE_THRESHOLD)
+					if(isClock && shakeSpeed < SHAKE_THRESHOLD)
 					{
 						staticMark += 1;
 						if(staticMark >= staticMarkThreshold)
