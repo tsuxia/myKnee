@@ -212,7 +212,7 @@ public class MeasurementFragment extends Fragment {
 			
 			final_flag = 2;
 			if(isClock && isTTS && !isButton && !isGesture)
-				MainActivity.speak("Started at "+y_angle_start+" degree; Ended at "+y_angle_final + " degree; Range of Motion is " + final_angle + "degree.");
+				MainActivity.speak("Started at "+y_angle_start+" degrees; Ended at "+y_angle_final + " degrees; Range of Motion is " + final_angle + "degrees.");
 			if (isClock && !isTTS && !isButton && !isGesture)
 				Toast.makeText(getActivity(), "Started at "+y_angle_start+"бу; Ended at "+y_angle_final + "бу; Range of Motion is " + final_angle + "бу.", Toast.LENGTH_LONG).show();
 			

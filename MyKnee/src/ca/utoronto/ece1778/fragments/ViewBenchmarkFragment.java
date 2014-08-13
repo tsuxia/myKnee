@@ -88,8 +88,7 @@ public class ViewBenchmarkFragment extends Fragment
 			@Override
 			public void onClick(View v)
 			{
-			//	fufh.buttonClicked(R.layout.fragment_question_mark);
-				if(isSurgeried && (leg == UserProfileFragment.BOTH || leg == TempValue.leg)){
+		/*		if(isSurgeried && (leg == UserProfileFragment.BOTH || leg == TempValue.leg)){
 					
 						AlertDialog.Builder adb = new AlertDialog.Builder(getActivity());
 						adb.setTitle("Reference for surgey leg");
@@ -101,18 +100,16 @@ public class ViewBenchmarkFragment extends Fragment
 						adb.setNegativeButton("OK", null);
 						adb.show();
 					
-				}else{
+				}else{*/
 						
 						AlertDialog.Builder adb = new AlertDialog.Builder(getActivity());
-						adb.setTitle("Reference for normal leg");
-						adb.setMessage("This information is based on the age you entered " +
-								"in the profile page and the data comes from the research" +
-								" by Normal Hip and Knee Active Range of Motion: The " +
-								"Relationship to Age. Kathryn E Roach and Toni P Miles. " +
-								"PHYS THER. 1991; 71:656-665.");
+						adb.setTitle("Reference for benchmark");
+						adb.setMessage("This information is based on your age and the benchmark " +
+								"reference is: Normal hip and knee active range of motion: The " +
+								"relationship to age. Roache KE, & Miles TP. Physical Therapy. 1991;71:656-665.");
 						adb.setNegativeButton("OK", null);
 						adb.show();
-				}
+		//		}
 			}
 		});
 		

@@ -62,8 +62,8 @@
     <string name="button">Button</string>
     <string name="clock">Clock</string>
     <string name="gesture">Gesture</string>
-    <string name="delete_profile">Delete My Profile</string>
-    <string name="delete_progress">Delete My Progress</string>
+    <string name="delete_profile">Delete Profile</string>
+    <string name="delete_progress">Delete Progress</string>
 
     <!-- measure method page -->
     <string name="measure_method_question">How do you want to \nmeasure your knee?</string>
@@ -71,8 +71,8 @@
     <string name="button_begin_measurement">Begin measurement</string>
     
     <!-- Strings for view benchmark -->
-    <string name="result_get_title">Range of motion you get:</string>
-    <string name="result_should_title">Range of motion \nyou should achieve:</string>
+    <string name="result_get_title">Range of motion:</string>
+    <string name="result_should_title">Benchmark:</string>
     <string name="question_mark">\?</string>
 
     <!-- measurement page -->

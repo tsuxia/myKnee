@@ -21,8 +21,9 @@
         <Button
             android:id="@+id/button_delete_profile"
             style="@style/button_guide"
+            android:textSize="23sp"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="32dp"
             android:layout_marginTop="10dp"
             android:background="#ff0000"
             android:text="@string/delete_profile" />
@@ -30,8 +31,9 @@
         <Button
             android:id="@+id/button_delete_progress"
             style="@style/button_guide"
+            android:textSize="23sp"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="32dp"
             android:layout_marginTop="8dp"
             android:background="#ff6932"
             android:text="@string/delete_progress" />
