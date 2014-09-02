@@ -50,7 +50,7 @@ public class MeasureMethodFragment extends Fragment {
 		// show a message while loader is loading
 		AlertDialog.Builder adb = new AlertDialog.Builder(getActivity());
 	//	adb.setTitle("Delete?");
-		adb.setMessage("Which leg are you measuring?");
+		adb.setMessage("Which knee are you measuring?");
 		adb.setNegativeButton("Left", new AlertDialog.OnClickListener()
 		{
 			@Override

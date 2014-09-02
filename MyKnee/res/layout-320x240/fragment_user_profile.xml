@@ -167,24 +167,24 @@
                 style="@style/button_setted"
                 android:textSize="18sp"
                 android:layout_width="73dp"
-                android:layout_height="25dp"
+                android:layout_height="10dp"
                 android:text="@string/left" />
 
             <Button
                 android:id="@+id/button_surgery_both"
                 style="@style/button_unset"
-                android:textSize="18sp"
+                android:textSize="12sp"
                 android:layout_width="73dp"
-                android:layout_height="25dp"
+                android:layout_height="10dp"
                 android:layout_marginLeft="2dp"
                 android:text="@string/both" />
 
             <Button
                 android:id="@+id/button_surgery_right"
                 style="@style/button_unset"
-                android:textSize="18sp"
+                android:textSize="12sp"
                 android:layout_width="73dp"
-                android:layout_height="25dp"
+                android:layout_height="10dp"
                 android:layout_marginLeft="2dp"
                 android:text="@string/right" />
         </LinearLayout>
@@ -193,7 +193,7 @@
             android:id="@+id/button_profile_done"
             style="@style/button_guide"
             android:textSize="25sp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="1dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/button_ready_to_measure" />

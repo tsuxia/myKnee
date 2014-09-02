@@ -211,9 +211,9 @@ public class MeasurementFragment extends Fragment {
 		} else if (final_flag == -1) {
 			
 			final_flag = 2;
-			if(isClock && isTTS && !isButton && !isGesture)
-				MainActivity.speak("Started at "+y_angle_start+" degree; Ended at "+y_angle_final + " degree; Range of Motion is " + final_angle + "degree.");
-			if (isClock && !isTTS && !isButton && !isGesture)
+			if(isClock && isTTS)
+				MainActivity.speak("Started at "+y_angle_start+" degrees; Ended at "+y_angle_final + " degrees; Range of Motion is " + final_angle + "degrees.");
+			if (isClock && !isTTS)
 				Toast.makeText(getActivity(), "Started at "+y_angle_start+"бу; Ended at "+y_angle_final + "бу; Range of Motion is " + final_angle + "бу.", Toast.LENGTH_LONG).show();
 			
 			year = dateAndTime.get(Calendar.YEAR);
@@ -306,7 +306,7 @@ public class MeasurementFragment extends Fragment {
 					y_angle_start = (int) (Math.asin(y_total) * 180 / Math.PI);
 					z_angle_start = (int) (Math.acos(z_total) * 180 / Math.PI);
 
-					text_view_start.setText("Start at: " + y_angle_start + "бу");
+					text_view_start.setText("Start position: " + y_angle_start + "бу");
 
 				}
 
@@ -354,15 +354,15 @@ public class MeasurementFragment extends Fragment {
 						final_angle = Math.abs(y_angle_final - y_angle_start);
 					}
 
-					text_view_end.setText("End at: " + y_angle_final + "бу");
-					text_view_result.setText("Range of Motion: " + final_angle + "бу");
+					text_view_end.setText("End position: " + y_angle_final + "бу");
+					text_view_result.setText("Range of motion: " + final_angle + "бу");
 
 				}
 				
 
 				if (final_flag == -1) {
 				
-					if(isClock && !isButton && !isGesture && shakeSpeed < SHAKE_THRESHOLD)
+					if(isClock && shakeSpeed < SHAKE_THRESHOLD)
 					{
 						staticMark += 1;
 						if(staticMark >= staticMarkThreshold)

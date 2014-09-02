@@ -272,10 +272,10 @@ public class InteractiveMethodFragment extends Fragment
 
 				AlertDialog.Builder adb = new AlertDialog.Builder(getActivity());
 				adb.setTitle("Delete your profile?");
-				adb.setMessage("Do you want to delete ypur profile ");
+				adb.setMessage("Do you want to delete your profile ");
 				// final int user_id = Integer.parseInt(v.getTag().toString());
 				adb.setNegativeButton("Cancel", null);
-				adb.setPositiveButton("Ok", new AlertDialog.OnClickListener()
+				adb.setPositiveButton("OK", new AlertDialog.OnClickListener()
 				{
 					@Override
 					public void onClick(DialogInterface dialog, int which)
@@ -299,11 +299,11 @@ public class InteractiveMethodFragment extends Fragment
 			public void onClick(View v)
 			{
 				AlertDialog.Builder adb = new AlertDialog.Builder(getActivity());
-				adb.setTitle("Delete All?");
+				adb.setTitle("Delete your progress?");
 				adb.setMessage("Do you want to delete all data");
 				// final int user_id = Integer.parseInt(v.getTag().toString());
 				adb.setNegativeButton("Cancel", null);
-				adb.setPositiveButton("Ok", new AlertDialog.OnClickListener()
+				adb.setPositiveButton("OK", new AlertDialog.OnClickListener()
 				{
 					@Override
 					public void onClick(DialogInterface dialog, int which)
