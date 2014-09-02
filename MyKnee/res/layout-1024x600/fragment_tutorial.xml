@@ -14,7 +14,7 @@
         android:orientation="vertical" >
     
 	    <TextView
-	            style="@style/information_big"
+	            style="@style/information_middle"
 	            android:id="@+id/textview_turotial_title"
 	            android:layout_width="match_parent"
 	            android:layout_height="wrap_content"
